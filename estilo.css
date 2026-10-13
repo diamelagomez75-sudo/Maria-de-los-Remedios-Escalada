@@ -1,0 +1,30 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4eef5;color:#333}
+header{background:#8e1e4a;color:white;text-align:center;padding:30px 15px}
+nav{background:white;text-align:center;padding:15px;border-bottom:4px solid #8e1e4a;position:sticky;top:0;z-index:10}
+nav a{display:inline-block;text-decoration:none;color:#8e1e4a;border:2px solid #8e1e4a;padding:7px 15px;border-radius:25px;margin:5px;font-weight:bold;font-size:14px}
+nav a:hover{background:#8e1e4a;color:white}
+
+/* CARRUSEL NUEVO */
+.carrusel-container{max-width:850px;margin:25px auto;position:relative;overflow:hidden;border-radius:15px;border:3px solid #8e1e4a;box-shadow:0 4px 15px rgba(0,0,0,0.2);background:white}
+.carrusel{position:relative;height:450px}
+.slide{display:none;width:100%;height:100%;text-align:center}
+.slide.activo{display:block;animation:fade 0.6s}
+.slide img{width:100%;height:380px;object-fit:cover;display:block;border:none;margin:0;max-width:100%;border-radius:0;box-shadow:none}
+.slide p{background:#8e1e4a;color:white;padding:10px;font-weight:bold;margin:0}
+.prev,.next{position:absolute;top:45%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:white;border:none;padding:12px 16px;font-size:22px;cursor:pointer;border-radius:50%}
+.prev{left:10px}.next{right:10px}
+.prev:hover,.next:hover{background:#8e1e4a}
+.puntos{text-align:center;padding:10px;background:white}
+.punto{display:inline-block;width:12px;height:12px;background:#e8c4d0;border-radius:50%;margin:0 5px;cursor:pointer}
+.punto.activo{background:#8e1e4a}
+@keyframes fade{from{opacity:0.4} to{opacity:1}}
+
+main{max-width:850px;margin:25px auto;background:white;padding:25px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+.card{border:2px solid #e8c4d0;border-radius:15px;margin-bottom:25px;overflow:hidden;background:white}
+.card-header{background:#f9d6e5;color:#8e1e4a;font-weight:bold;font-size:17px;padding:12px 18px;border-bottom:2px solid #e8c4d0}
+.card-body{padding:18px}
+.card-body p{text-align:justify;margin-bottom:10px}
+img{max-width:380px}
+.boton{display:inline-block;background:#8e1e4a;color:white!important;text-decoration:none;padding:10px 22px;border-radius:25px;font-weight:bold;margin:10px 5px}
+footer{background:#222;color:white;text-align:center;padding:20px;margin-top:30px}
